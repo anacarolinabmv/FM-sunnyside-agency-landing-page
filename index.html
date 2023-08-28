@@ -16,22 +16,22 @@
           <li><a href="#" class="nav--link">About</a></li>
           <li><a href="#" class="nav--link">Services</a></li>
           <li><a href="#" class="nav--link">Projects</a></li>
-          <li><a href="#" class="btn nav--btn">Contact</a></li>
+          <li><a href="#" class="btn btn--nav">Contact</a></li>
         </ul>
       </nav>
 
-      <h1 class="heading--header">We are creatives</h1>
+      <h1 class="heading--primary">We are creatives</h1>
     </header>
 
     <main>
-      <section class="grid--gallery">
-        <div class="grid--text">
-          <h2 class="grid--heading-lg">Transform your brand</h2>
-          <p class="grid--paragraph">
+      <section class="gallery">
+        <div class="gallery--text">
+          <h2 class="heading--secondary">Transform your brand</h2>
+          <p class="paragraph gallery--paragraph">
             We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through
             compelling visuals that do most of the marketing for you.
           </p>
-          <a href="#" class="grid--link">Learn More</a>
+          <a href="#" class="gallery--link gallery--link-yellow">Learn More</a>
         </div>
 
         <picture>
@@ -44,13 +44,13 @@
           <img src="images/mobile/image-stand-out.jpg" alt="Pink background glass" />
         </picture>
 
-        <div class="grid--text">
-          <h2 class="grid--heading-lg">Stand out to the right audience</h2>
-          <p class="grid--paragraph">
+        <div class="gallery--text">
+          <h2 class="heading--secondary">Stand out to the right audience</h2>
+          <p class="paragraph gallery--paragraph">
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
             we’ll build and extend your brand in digital places.
           </p>
-          <a href="#" class="grid--link">Learn More</a>
+          <a href="#" class="gallery--link gallery--link-red">Learn More</a>
         </div>
 
         <picture>
@@ -62,59 +62,89 @@
           <img src="images/mobile/image-photography.jpg" alt="Blue background orange" />
         </picture>
         <div class="absolute--position absolute--position-left">
-          <h3 class="grid--heading-sm">Graphic Design</h3>
-          <p class="grid--paragraph-2">
-            Graphic design Great design makes you memorable. We deliver artwork that underscores your brand message and
-            captures potential clients’ attention.
+          <h4 class="subheading--gallery">Graphic Design</h4>
+          <p class="gallery--paragraph">
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential clients’ attention.
           </p>
         </div>
         <div class="absolute--position absolute--position-right">
-          <h3 class="grid--heading-sm">Photography</h3>
-          <p class="grid--paragraph-2">
+          <h4 class="subheading--gallery">Photography</h4>
+          <p class="gallery--paragraph">
             Increase your credibility by getting the most stunning, high-quality photos that improve your business
             image.
           </p>
         </div>
       </section>
+
       <section class="testimonials vertical--padding-lg horizontal--padding-lg">
-        <h3 class="heading--testimonials">Client testimonials</h3>
+        <h3 class="heading--tertiary">Client testimonials</h3>
         <div class="testimonials--container">
           <div class="testimonial">
-            <img src="images/image-emily.jpg" class="person" alt="" />
-            <p class="text">
+            <img src="images/image-emily.jpg" class="client--picture" alt="" />
+            <p class="paragraph testimonials--paragraph">
               We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
               hit.
             </p>
-            <p class="name">Emily R.</p>
-            <p class="profession">Marketing Director</p>
+            <p class="client--name">Emily R.</p>
+            <p class="client--profession">Marketing Director</p>
           </div>
           <div class="testimonial">
-            <img src="images/image-thomas.jpg" class="person" alt="" />
-            <p class="text">
+            <img src="images/image-thomas.jpg" class="client--picture" alt="" />
+            <p class="paragraph testimonials--paragraph">
               Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
               enjoyable experience.
             </p>
-            <p class="name">Thomas S.</p>
-            <p class="profession">Chief Operating Officer</p>
+            <p class="client--name">Thomas S.</p>
+            <p class="client--profession">Chief Operating Officer</p>
           </div>
           <div class="testimonial">
-            <img src="images/image-jennie.jpg" class="person" alt="" />
-            <p class="text">
+            <img src="images/image-jennie.jpg" class="client--picture" alt="" />
+            <p class="paragraph testimonials--paragraph">
               Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
             </p>
-            <p class="name">Jennie F.</p>
-            <p class="profession">Business Owner</p>
+            <p class="client--name">Jennie F.</p>
+            <p class="client--profession">Business Owner</p>
           </div>
         </div>
       </section>
+      <section class="images">
+        <picture>
+          <source media="(min-width: 450px)" srcset="images/desktop/image-gallery-milkbottles.jpg" />
+          <img src="images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles" />
+        </picture>
+        <picture>
+          <source media="(min-width: 450px)" srcset="images/desktop/image-gallery-orange.jpg" />
+          <img src="images/mobile/image-gallery-orange.jpg" alt="Slice of orange on a plate" />
+        </picture>
+        <picture>
+          <source media="(min-width: 450px)" srcset="images/desktop/image-gallery-cone.jpg" />
+          <img src="images/desktop/image-gallery-cone.jpg" alt="Ice cream cone" />
+        </picture>
+        <picture>
+          <source media="(min-width: 450px)" srcset="images/desktop/image-gallery-sugarcubes.jpg" />
+          <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar cubes" />
+        </picture>
+      </section>
     </main>
-
-    About Services Projects Contact
-
-    <div class="attribution">
+    <footer class="vertical--padding-md">
+      <img src="images/logo green.svg" class="logo" alt="logo" />
+      <ul class="nav--links">
+        <li><a href="#" class="nav--link">About</a></li>
+        <li><a href="#" class="nav--link">Services</a></li>
+        <li><a href="#" class="nav--link">Projects</a></li>
+      </ul>
+      <ul class="social--links">
+        <a href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+        <a href="#"><img src="images/icon-instagram.svg" alt="" /></a>
+        <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+        <a href="#"><img src="images/icon-pinterest.svg" alt="" /></a>
+      </ul>
+      <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="#">Your Name Here</a>.
     </div>
-    <script src="script.js"></script>
+    <script src="script.js"></script> -->
+    </footer>
   </body>
 </html>
