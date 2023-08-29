@@ -91,9 +91,6 @@ header {
   font-weight: 600;
 }
 
-.hide--nav {
-  display: none;
-}
 /********************************************************/
 /*************************HEADER**************************/
 /********************************************************/
@@ -495,12 +492,13 @@ footer .nav--link:hover {
 }
 
 @media (max-width: 560px) {
-  nav {
-    padding: 2rem 4rem;
-  }
   .mobile--nav-icon {
     display: inline-block;
     transform: scale(1.2);
+  }
+  nav {
+    padding: 2rem;
+    position: relative;
   }
   nav .nav--links {
     display: none;
@@ -512,7 +510,7 @@ footer .nav--link:hover {
     flex-direction: column;
     align-items: center;
     width: 90%;
-    padding: 4rem 12rem;
+    padding: 6rem 12rem;
     gap: 4rem;
     z-index: 999;
   }
@@ -526,6 +524,10 @@ footer .nav--link:hover {
     height: 0;
     border-bottom: 30px solid var(--White);
     border-left: 30px solid transparent;
+  }
+
+  .nav--links.show--nav {
+    display: flex !important;
   }
   .nav--link {
     color: var(--Grayish-blue);
@@ -558,7 +560,6 @@ footer .nav--link:hover {
   .paragraph,
   .gallery--link,
   .btn--nav,
-  .nav--link,
   .attribution,
   .overlay--paragraph {
     font-size: 1.2rem;
